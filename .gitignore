@@ -1,0 +1,8 @@
+# Private course source material — never publish
+handouts_readonly/
+old_site_readonly/
+
+# Local/editor files
+.impeccable/
+.DS_Store
+Thumbs.db

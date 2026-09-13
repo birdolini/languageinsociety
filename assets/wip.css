@@ -1,0 +1,5 @@
+/* Honest placeholders for upcoming lessons. */
+.wip-page main { width: min(100% - 48px, 900px); min-height: calc(100vh - 250px); margin: 20px auto 78px; display: grid; place-items: center; }
+.wip-card { width: 100%; padding: clamp(38px, 8vw, 84px); background: var(--paper); border: 1px solid var(--line); border-radius: 24px; text-align: center; }
+.wip-card .crumb { text-align: left; }.wip-card h1 { max-width: 700px; margin: 38px auto 22px; font-size: clamp(3rem, 7vw, 5.8rem); }.wip-card > p { max-width: 620px; margin-inline: auto; }.wip-status { display: inline-block; padding: 8px 12px; border-radius: 999px; background: var(--yellow); color: var(--ink); font-size: .78rem; font-weight: 800; }.wip-card .button { margin-top: 18px; }
+@media (max-width:720px) { .wip-page main { width: min(100% - 32px, 900px); }.wip-card { padding: 38px 25px; }.wip-page footer { grid-template-columns: 1fr; text-align: center; }.wip-page footer > a:last-child { justify-self: center; } }

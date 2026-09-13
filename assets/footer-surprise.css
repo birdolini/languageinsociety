@@ -1,0 +1,51 @@
+/* Isolated love vignette: a five-second bloom, starlight release, then a handwritten-feeling dedication. */
+footer:has(.footer-delights) { grid-template-columns: 1fr auto 1fr; }
+footer:has(.footer-delights) > a:last-child { justify-self: end; }
+.footer-delights { display: flex; align-items: center; justify-content: center; gap: 9px; }
+.footer-surprise, .footer-song { min-height: 44px; padding: 8px 14px; border: 1px dashed #ffffff80; border-radius: 999px; background: transparent; color: #fbf8ee; font: 700 .82rem/1 "Atkinson Hyperlegible", sans-serif; cursor: pointer; }
+.footer-surprise:hover, .footer-song:hover { background: #ffffff18; }
+.footer-song { border-style: solid; border-color: #ffc1c7; color: #ffdce1; }
+.footer-surprise:focus-visible, .footer-song:focus-visible, .surprise-close:focus-visible, .song-close:focus-visible { outline: 3px solid #ffdf76; outline-offset: 4px; }
+.song-layer { position: fixed; z-index: 101; inset: 0; display: grid; place-items: center; padding: 24px; background: rgba(24,12,21,.74); }.song-card { position: relative; width: min(100%, 720px); padding: 23px; background: #fff0f2; border-radius: 20px; box-shadow: 0 22px 55px rgba(0,0,0,.38); }.song-card > p { margin: 0 0 13px; color: #852c49; font: 800 1.35rem/1 "Alegreya", Georgia, serif; }.song-link { display: block; overflow: hidden; border-radius: 10px; background: #2b1722; color: #fff8ee; text-decoration: none; }.song-link img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }.song-link span, .song-link small { display: block; padding-inline: 16px; }.song-link span { padding-top: 14px; font: 800 1.35rem/1 "Alegreya", Georgia, serif; }.song-link small { padding-block: 9px 15px; color: #ffd4df; font-weight: 700; }.song-link:hover small { text-decoration: underline; text-underline-offset: 3px; }.song-close { position: absolute; top: 12px; right: 12px; z-index: 1; width: 36px; height: 36px; border: 1px solid #852c49; border-radius: 50%; background: #fff8ee; color: #852c49; font: 27px/1 Georgia, serif; cursor: pointer; }
+.footer-surprise-layer { position: fixed; z-index: 100; inset: 0; display: none; overflow: hidden; background: #fff0f2; color: #6a253d; isolation: isolate; }
+.footer-surprise-layer.is-open { display: block; animation: surprise-scene .7s ease-out both; }
+.footer-surprise-layer::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: #ffe0e7; clip-path: ellipse(45% 35% at 50% 39%); }
+.surprise-close { position: absolute; z-index: 10; top: max(20px, env(safe-area-inset-top)); right: 20px; width: 48px; height: 48px; border: 2px solid #8a3a50; border-radius: 50%; background: #fff8ee; color: #782b43; font: 30px/1 Georgia, serif; cursor: pointer; }
+.surprise-close:hover { background: #ffffff20; }
+.surprise-art { position: absolute; left: 50%; top: 39%; width: min(56vw, 290px, 38vh); aspect-ratio: 1; transform: translate(-50%, -50%); pointer-events: none; }
+.surprise-gem { position: absolute; inset: 0; filter: drop-shadow(0 7px 0 #d94a6660); animation: surprise-bloom 5.3s cubic-bezier(.4,0,.25,1) both; }
+.surprise-heart { width: 100%; height: 100%; background: #ff5275; }
+.surprise-face { position: absolute; left: 27%; top: 37%; width: 46%; height: 24%; }
+.surprise-face i { position: absolute; top: 0; left: 19%; width: 10%; height: 30%; border-radius: 50%; background: radial-gradient(circle at 35% 28%, #fff8ee 0 15%, transparent 19%), #652539; }
+.surprise-face i:nth-child(2) { left: 73%; }
+.surprise-face b { position: absolute; left: 40%; top: 25%; width: 24%; height: 29%; border: 3px solid #652539; border-top: 0; border-radius: 0 0 30px 30px; }
+.surprise-face::before, .surprise-face::after { content: ""; position: absolute; top: 29%; left: 0; width: 27%; height: 26%; background: #ffb2bd; border-radius: 50%; }
+.surprise-face::after { left: auto; right: 0; }
+.surprise-halo { position: absolute; inset: -48%; border-radius: 50%; background: transparent; animation: surprise-aura 5.3s ease-in-out both; }
+.surprise-orbit { position: absolute; inset: -22%; border: 2px dashed #d56d8740; border-radius: 50%; transform: rotate(-28deg) scaleY(.56); animation: surprise-orbit-in 2s 4.5s both; }
+.surprise-orbit::after { content: ""; position: absolute; width: 8px; height: 8px; left: 14%; top: 14%; background: #e59036; border-radius: 50%; }
+.surprise-orbit.second { display: none; }
+.surprise-stars { position: absolute; inset: 0; pointer-events: none; }
+.surprise-stars > i { position: absolute; left: var(--x); top: var(--y); width: var(--s); height: var(--s); background: #d97889; clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); animation: surprise-twinkle 4s var(--delay) ease-in-out infinite alternate; }
+.surprise-rays { position: absolute; inset: 0; }
+.surprise-rays i { position: absolute; left: 50%; top: 50%; width: var(--length); height: 4px; border-radius: 8px; transform-origin: left; background: #eda84d; animation: surprise-ray 2.4s var(--delay) ease-out both; }
+.surprise-petal { position: absolute; left: 50%; top: 39%; width: var(--s); height: var(--s); object-fit: contain; animation: surprise-release 7s var(--delay) cubic-bezier(.16,.65,.3,1) both; }
+.surprise-letter { position: absolute; top: 66%; left: 50%; transform: translateX(-50%); width: min(92%, 720px); text-align: center; pointer-events: none; }
+.surprise-message { margin: 0; min-height: 2.2em; color: #852c49; font: italic 800 clamp(1.9rem, 5.7vw, 3.8rem)/1.15 "Alegreya", Georgia, serif; letter-spacing: -.025em; text-wrap: balance; }
+.surprise-signature { margin: 8px 0 0; color: #99435b; font: 400 1rem/1.5 "Atkinson Hyperlegible", sans-serif; animation: surprise-scene 1.6s 8s both; }
+.surprise-caret { display: inline-block; height: .75em; width: 1px; margin-left: 5px; background: #99435b; animation: surprise-cursor 1.2s 5.6s step-end infinite; opacity: 0; }
+@keyframes surprise-scene { from { opacity: 0; } to { opacity: 1; } }
+@keyframes surprise-bloom { 0% { transform: scale(.025) rotate(-12deg); opacity: 0; } 10% { opacity: 1; } 70% { transform: scale(.75) rotate(3deg); } 90% { transform: scale(1.045) rotate(-1deg); } 100% { transform: scale(1) rotate(0); opacity: 1; } }
+@keyframes surprise-aura { from { opacity: 0; transform: scale(.1); } to { opacity: 1; transform: scale(1); } }
+@keyframes surprise-orbit-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes surprise-twinkle { from { opacity: .15; transform: scale(.6); } to { opacity: .85; transform: scale(1); } }
+@keyframes surprise-ray { 0% { opacity: 0; transform: rotate(var(--a)) translateX(30px) scaleX(.1); } 20% { opacity: .8; } 100% { opacity: 0; transform: rotate(var(--a)) translateX(190px) scaleX(1.4); } }
+@keyframes surprise-release { 0% { opacity: 0; transform: translate(-50%, -50%) scale(.1); } 15% { opacity: .9; } 75% { opacity: .85; } 100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--spin)) scale(.85); } }
+@keyframes surprise-cursor { 50% { opacity: .8; } }
+@media (prefers-reduced-motion: reduce) {
+  .footer-surprise-layer *, .footer-surprise-layer.is-open { animation: none !important; }
+  .surprise-rays, .surprise-petal, .surprise-caret { display: none; }
+  .surprise-stars > i { opacity: .45; }
+}
+@media (max-height: 500px) { .surprise-art { top: 35%; } .surprise-letter { top: 65%; } .surprise-message { font-size: 1.8rem; min-height: 1.2em; } }
+@media (max-width: 720px) { footer:has(.footer-delights) { grid-template-columns: 1fr; } footer:has(.footer-delights) > a:last-child { justify-self: center; } .footer-delights { flex-wrap: wrap; } }
