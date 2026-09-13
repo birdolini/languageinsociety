@@ -8,7 +8,6 @@
   if (!toggle) return;
 
   const storedTheme = localStorage.getItem('lis-theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const setTheme = (theme) => {
     const isDark = theme === 'dark';
     document.body.dataset.theme = theme;
@@ -17,7 +16,7 @@
     toggle.querySelector('.theme-label').textContent = isDark ? 'Light mode' : 'Dark mode';
   };
 
-  setTheme(storedTheme || (prefersDark ? 'dark' : 'light'));
+  setTheme(storedTheme || 'light');
   toggle.addEventListener('click', () => {
     const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('lis-theme', nextTheme);
