@@ -19,7 +19,7 @@ The course connects language with social life, from variation in everyday speech
 
 The course research project (15%) is a group study of an **Omani variety**. Students select a dialect, define one or two linguistic variables, design collection methods, gather and analyze data, interpret results through course concepts, and produce a scientific poster. Project instructions call for at least eight interviewed speakers, stratified by age and gender; the supplied spreadsheet demonstrates count/percentage comparisons for the variable `(q)` by gender and age. The site may later explain this workflow, but must not collect participant data or manufacture results.
 
-The supplied 2026 course outline lists the project submission/presentation on **4 May 2026**. Treat dates as term-specific and verify before placing them in the public UI.
+The Fall 2026 course outline is a private schedule reference. Treat dates as term-specific and verify them before placing anything in the public UI; do not publish the outline itself.
 
 ## Course content map
 Planned content should follow these connected study areas:
@@ -37,10 +37,10 @@ Planned content should follow these connected study areas:
 11. **Internet sociolinguistics** — social media, digital identities, and changing linguistic forms/functions online.
 12. **Study activities** — concept mapping, data interpretation, and applying concepts to examples.
 
-## Current milestone: homepage + Foundations + Research Methods + Regional and Social Dialects + Gender, Age & Change + Style & Identity
+## Current milestone: weekly course-map alignment
 
 ### Goal
-Keep the homepage and the first five lessons: Foundations, Research Methods, Regional and Social Dialects, Gender, Age & Change, and Style & Identity. Audit each against its source handouts before calling it complete. Use simple analogies only where they clarify a concept; each lesson needs natural Arabic explanations and its own layout. The remaining homepage topics and Project Notes can have clearly marked WIP pages.
+Reorganise the homepage and lesson routes around the Fall 2026 Week 1–16 schedule without rewriting finished lesson content or turning the study companion into an official course portal. Keep the first five lessons, add concise week context and direct section links, and retain honest WIP destinations for unfinished weeks. The detailed implementation sequence is in [`WEEK_ALIGNMENT_PLAN.md`](WEEK_ALIGNMENT_PLAN.md).
 
 ### Required content
 - Clear site name and a short description of the course/study purpose.
