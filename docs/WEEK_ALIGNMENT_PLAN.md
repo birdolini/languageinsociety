@@ -56,6 +56,10 @@ This is a navigation and information-architecture change, not a rewrite of the c
 - Add only small visual cues that improve recall: week numerals, subtle connector lines, and existing lesson illustrations—not decorative clutter.
 - Preserve minimum 44px tap targets, visible focus styles, reduced-motion support, and light/charcoal theme parity.
 
+## Weekly destination strategy
+
+Every Week 1–16 card will open a dedicated `week-XX.html` guide. A guide gives that week one clear topic focus, a short study route, and an honest status. Existing long-form lessons remain useful deep dives reached from the relevant weekly guide; homepage cards will no longer jump into a combined lesson or a buried fragment.
+
 ## Lesson alignment changes
 
 ### Completed lessons
@@ -89,7 +93,8 @@ This is a navigation and information-architecture change, not a rewrite of the c
 ### C. Lesson routes and labels
 - [x] Add stable, descriptive fragment IDs to the relevant sections in Lessons 1–5.
 - [x] Add concise visible week chips/context lines without repeating the homepage schedule on every lesson.
-- [x] Update homepage links to use those destinations.
+- [x] Replace section-fragment homepage links with dedicated weekly-guide destinations.
+- [x] Build dedicated Week 1–16 guides with a focused overview, three-step study route, deep-dive route, and previous/next week navigation.
 - [x] Update previous/next lesson links where a weekly route makes the sequence clearer, without creating broken circular navigation.
 - [x] Align Lesson 6’s WIP wording with globalization, diversity, multilingualism, language choice, attitudes, identity, and global English.
 - [x] Align Lesson 7 and Lesson 8 WIP wording with their respective Week 13 and Week 14 outline topics.
