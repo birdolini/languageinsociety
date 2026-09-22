@@ -48,6 +48,7 @@ Keep the homepage and the first five lessons: Foundations, Research Methods, Reg
 - A compact, scannable overview of the main study areas above; it may use non-functional cards/anchors until lesson pages exist.
 - A small, natural Arabic study-note line in the homepage hero.
 - A teacher-like study-guidance section with practical revision steps, not promotional study copy.
+- A concise, non-official course-outline-at-a-glance beneath revision tips, organised by week and without staff details, reading lists, or fixed dates.
 - A concise note that this is an independent study companion and that course handouts remain the authoritative source.
 - Footer with an unobtrusive course/site label.
 - A working link from the Foundations topic tile to `lesson-01-foundations.html`.
