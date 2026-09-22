@@ -114,7 +114,7 @@ Every Week 1–16 card will open a dedicated `week-XX.html` guide. A guide gives
 - [x] Perform the user-requested static/browser review at iPad portrait, iPad landscape, phone, light mode, and dark mode.
 - [x] Check relative links and direct GitHub Pages paths.
 - [x] Commit only public site files and documentation; verify the private outline remains ignored.
-- [ ] Push the finished weekly-alignment change to `main`.
+- [x] Push the finished weekly-alignment change to `main`.
 
 ## Completion definition
 The work is complete when the homepage reads as a calm Fall 2026 study path from Week 1 through Week 16, every completed topic routes directly to the relevant lesson material, WIP content is honest, and the primary iPad experience remains spacious, touch-friendly, and recognisably part of the existing site.
